@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Rockbar API</title>
+    <title>EJS Boilerplate</title>
 
     <link rel="stylesheet" href="/css/style.css"/>
 
@@ -11,10 +11,15 @@
 
 <body>
 
-    <h1>Welcome to Express Boilerplate. </h1> 
-        
-    <p>Route access in this boilerpplate is provided via token authentication. A user must exist in the database prior to receiving a token, by sending a username and password to 
-        <em>/api/user/authenticate-user</em>
+    <h1>Welcome to another ExpressJS Boilerplate</h1>
+    
+    <p>
+        This app has token authentication set up and ready to use. Each route, except for user authenticating, has token authorizing middleware set up to assess. By default, Tokens will expire every 3 days. 
+    </p>
+
+    <p>
+        An example of handling token expiration: If a user accesses the client application within 6 hours of their token expiry, you can use the default refresh-token api route provided by this app to get a new token and retire 
+        the current one to a blacklisted token collection. The blacklist ensures that tokens discarded prior to expiry are no longer usable. Blacklisting also occurs on hitting the api's logout route.
     </p>
 
 </body>
