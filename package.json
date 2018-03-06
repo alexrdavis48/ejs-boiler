@@ -1,0 +1,27 @@
+{
+  "name": "rockbar-api",
+  "description": "Data access for Rockbar client applications",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexrdavis48/rockbar-api.git"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.18.2",
+    "cors": "^2.8.4",
+    "cron": "^1.3.0",
+    "express": "~4.16.2",
+    "glob": "^7.1.2",
+    "jslint": "^0.11.0",
+    "jsonfile": "^4.0.0",
+    "jsonwebtoken": "^8.1.0",
+    "method-override": "~2.3.10",
+    "mongoose": "^5.0.3",
+    "morgan": "^1.9.0",
+    "node-geocoder": "^3.21.1",
+    "node-schedule": "^1.3.0"
+  }
+}
